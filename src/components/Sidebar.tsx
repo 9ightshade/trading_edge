@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo.svg"
 import logout from "../assets/logout.png"
+import { Profile } from './Profile'
 export const Sidebar = () => {
     return (
         <div className='bg-[#0D0D0D] py-4 px-4 h-[100vh] relative w-2/12' >
@@ -33,9 +34,8 @@ export const Sidebar = () => {
 
             <div className='footer text-white absolute bottom-0 left-0 p-4' >
                 <button className='flex gap-2 items-center hover:text-green-400 ' >
-                    <img src={logout} alt="logout" />  <span>
-                        Log out
-                    </span>
+                    <img src={logout} alt="logout" /> 
+                    <Profile/>
                 </button>
             </div>
         </div>
